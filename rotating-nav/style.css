@@ -41,6 +41,10 @@ body {
     transition: transform 0.5 linear;
 }
 
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
 .circle button {
     position: absolute;
     top: 50%;
@@ -50,6 +54,7 @@ body {
     border: 0;
     font-size: 26px;
     color: #fff;
+    cursor: pointer;
 }
 
 .circle button:focus {
@@ -84,7 +89,7 @@ nav ul {
 }
 
 nav ul li {
-    text-transform: ;
+    text-transform: uppercase;
     color: #fff;
     margin: 40px 0;
     transform: translateX(-100%);
@@ -97,11 +102,6 @@ nav ul li i {
     color: #ff7979;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
 nav ul li + li {
     margin-left: 15px;
     transform: translateX(-150%);
@@ -110,6 +110,17 @@ nav ul li + li {
 nav ul li + li + li {
     margin-left: 30px;
     transform: translateX(-200%);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: #FF7979;
+    font-weight: bold;
 }
 
 .content {
