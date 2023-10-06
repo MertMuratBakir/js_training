@@ -1,8 +1,8 @@
 
-var dice6 = document.querySelectorAll('img');
+var dice = document.querySelectorAll('img');
 var h1 = document.querySelector('h1');
-dice6[0].setAttribute('src', 'images/dice6.png');
-dice6[1].setAttribute('src', 'images/dice6.png');
+dice[0].setAttribute('src', 'images/dice6.png');
+dice[1].setAttribute('src', 'images/dice6.png');
 
 var randomNumber1 = Math.floor(Math.random() * 6) +1;
 var randomNumber2 = Math.floor(Math.random() * 6) +1;
@@ -23,3 +23,7 @@ if (randomNumber1 > randomNumber2) {
 } else {
     h1.innerHTML = "Draw!";
 }
+
+addEventListener('click', function() {
+    location.reload(); 
+});
