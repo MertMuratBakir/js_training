@@ -1,8 +1,6 @@
 
 var dice = document.querySelectorAll('img');
 var h1 = document.querySelector('h1');
-dice[0].setAttribute('src', 'images/dice6.png');
-dice[1].setAttribute('src', 'images/dice6.png');
 
 var randomNumber1 = Math.floor(Math.random() * 6) +1;
 var randomNumber2 = Math.floor(Math.random() * 6) +1;
