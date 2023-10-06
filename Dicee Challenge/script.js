@@ -1,5 +1,6 @@
 
 var dice6 = document.querySelectorAll('img');
+var h1 = document.querySelector('h1');
 dice6[0].setAttribute('src', 'images/dice6.png');
 dice6[1].setAttribute('src', 'images/dice6.png');
 
@@ -14,3 +15,11 @@ image1.setAttribute('src', randomDiceImage1);
 
 var image2 = document.querySelectorAll('img')[1];
 image2.setAttribute('src', randomDiceImage2);
+
+if (randomNumber1 > randomNumber2) {
+    h1.innerHTML = "🚩 Player 1 Wins!";
+} else if (randomNumber2 > randomNumber1) {
+    h1.innerHTML = "Player 2 Wins! 🚩";
+} else {
+    h1.innerHTML = "Draw!";
+}
