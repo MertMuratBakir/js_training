@@ -118,3 +118,41 @@ fa-check {
     transform: translateY(10rem) rotateZ(20deg);
     opacity: 0;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+select {
+  color: #fb966f;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #fb966f;
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #fb966f;
+}
